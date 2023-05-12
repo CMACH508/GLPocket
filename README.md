@@ -41,7 +41,7 @@ Download the pretrained model from https://pan.baidu.com/s/1pAotuH3G0XmUN12Ni53W
 
 #### 2. Test
 
-If you want to test GLPocket on coach420, holo4k, sc6k or pdbbind under DCC and DVO metrics, please run:
+If you want to test GLPocket on coach420, holo4k, sc6k or pdbbind under DCC, DVO or DCA metrics, please run:
 
 ```
 

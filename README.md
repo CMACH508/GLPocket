@@ -19,7 +19,7 @@ You can also download our pre-processed train and test data RecurPocket_release/
 
 ## Data processing
 
-For COACH420, HOLO4K and SC6K, the preprocessing procedure is the same as in [DeepPocket](https://github.com/devalab/DeepPocket). 
+For COACH420, HOLO4K, SC6K and PDBbind, the preprocessing procedure is the same as in [DeepPocket](https://github.com/devalab/DeepPocket). 
 
 ## Train
 

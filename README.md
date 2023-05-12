@@ -30,7 +30,7 @@ cd GLPocket
 chmod a+x run.sh
 ./run.sh
 
-note: in run.sh, 'data_root' is the directory where 'scPDB', 'test_types' are located.
+Note: in run.sh, 'data_root' is the directory where 'scPDB', 'test_types' are located.
 ```
 
 ## Test
@@ -44,12 +44,11 @@ Download the pretrained model from https://pan.baidu.com/s/1pAotuH3G0XmUN12Ni53W
 If you want to test GLPocket on coach420, holo4k, sc6k or pdbbind under DCC, DVO or DCA metrics, please run:
 
 ```
-
 cd GLPocket
 chmod a+x evaluation.sh
 ./evaluation.sh
 
-note: in evaluation.sh, you can set 'test_set', 'is_dca', 'top_n', 'data_root', 'ckpt_path' by yourself.
+Note: in evaluation.sh, you can set 'test_set', 'is_dca', 'top_n', 'data_root', 'ckpt_path' by yourself.
 'ckpt_path' is the path of pre-trained model.
 'data_root' is the directory where 'scPDB', 'test_types' are located.
 'is_dca=0' represents the computation of DCC & DVO.

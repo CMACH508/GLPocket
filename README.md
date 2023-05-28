@@ -22,11 +22,11 @@ You can also download our pre-processed train and test data RecurPocket_release/
 For COACH420, HOLO4K, SC6K and PDBbind, the preprocessing procedure is the same as in [DeepPocket](https://github.com/devalab/DeepPocket). 
 
 ## Data Representation
-% Our method takes the whole protein structure as input in the form of a multi-channel 3D grid. We applied molgrid to voxelize the whole protein structure into multi-channel 3D grid data, and upsampled the data ($\times2$) with the shape like $C\times H\times W\times D$. C is the number of grid channels representing the atom types. Atom types are listed in Supplementary Materials. $H, W$ and $D$ are the height, width and depth of input data. The input shape in this work is  $14\times 129\times 129\times 129$.
+Our method takes the whole protein structure as input in the form of a multi-channel 3D grid. We applied molgrid to voxelize the whole protein structure into multi-channel 3D grid data, and upsampled the data ($\times2$) with the shape like $C\times H\times W\times D$. C is the number of grid channels representing the atom types. Atom types are listed in Supplementary Materials. $H, W$ and $D$ are the height, width and depth of input data. The input shape in this work is  $14\times 129\times 129\times 129$.
 
 In addition, under a given protein, we applied Fpocket to generate candidate centers. Fpocket is a fast prediction tool that predicts many pockets with high recall but low precision. The predicted pocket centers are regarded as candidate centers. Each candidate center is used as a prior to guide the network to focus on interested local regions  (called proposals) of a protein. This greatly reduces the volume of feature maps to be calculated by $82\%$.
 
-Since the ligand in the protein-ligand complex is relatively sparse and cannot be directly used as true label for the predicted binding pocket, we use VolSite tool \cite{volsite} to generate cavity as ground truth label. We discard samples with ligands buried too shallow to obtain corresponding cavities. As shown in Fig. 1(a), the light colored transparent volume cavity is used as a protein binding site.
+Since the ligand in the protein-ligand complex is relatively sparse and cannot be directly used as true label for the predicted binding pocket, we use VolSite tool to generate cavity as ground truth label. We discard samples with ligands buried too shallow to obtain corresponding cavities. As shown in Fig. 1(a), the light colored transparent volume cavity is used as a protein binding site.
 
 ## Train
 

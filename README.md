@@ -44,7 +44,7 @@ Note: in run.sh, 'data_root' is the directory where 'scPDB', 'test_types' are lo
 
 #### 1. Pre-trained model
 
-Download the pretrained model from https://pan.baidu.com/s/1pAotuH3G0XmUN12Ni53WdQ (code：agh9)
+Download the pretrained model from https://pan.baidu.com/s/1BFmBJ1gvHpwyrt1uYbF47w code:ib9i
 
 #### 2. Test
 
